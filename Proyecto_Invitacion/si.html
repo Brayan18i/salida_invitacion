@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .custom-alert {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            color: #000;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .custom-alert button {
+            margin-top: 10px;
+            padding: 5px 15px;
+            font-size: 16px;
+            border: none;
+            background-color: #ca4848;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-alert button:hover {
+            background-color: #a45aa9;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="27552077" data-share-method="host" data-aspect-ratio="1.09589" data-width="100%">
+            <a href="https://tenor.com/view/peach-and-goma-kiss-gif-27552077">Peach And GIF</a>from 
+            <a href="https://tenor.com/search/peach-gifs">Peach GIFs</a>
+        </div> 
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1> ¡¡¡¡Lo sabia!!!!🫶 </h1>
+    </div>
+
+    <!-- ALERTA PERSONALIZADA -->
+    <div class="overlay" id="overlay"></div>
+    <div class="custom-alert" id="customAlert">
+        <p>I Love You ❤️</p>
+        <button onclick="closeAlert()">Cerrar</button>
+    </div>
+
+    <script>
+        function closeAlert() {
+            document.getElementById("customAlert").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
